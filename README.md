@@ -1,4 +1,4 @@
-### Hi there 👋
+### 嗨 👋
 
 <!--
 **4100E012/4100E012** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
