@@ -1,0 +1,192 @@
+
+9.
+
+login as: lab
+lab@120.114.62.206's password:
+Last login: Wed Oct 13 02:57:09 2021 from 172.20.155.102
+lab@906f0d80ad09:~$ cd /tmp
+lab@906f0d80ad09:/tmp$  ls
+404040    4080H141  4100E009  A100E102       fragon          tmp.v7tQ3LGBXe
+4070E057  4100E002  4100E013  ABCD4041       kao
+4070E061  4100E004  4100E016  ForYou.tar.gz  reverse
+4070E064  4100E006  4100E021  Lunarstar      tmp.Doffro3yvG
+4070E61   4100E007  4100E022  TobeExe        tmp.WjJaQY3XQ4
+4080E086  4100E008  4100E029  dragon         tmp.a202n3Vqeg
+lab@906f0d80ad09:/tmp$ mkdir kao
+mkdir: cannot create directory 'kao': File exists
+lab@906f0d80ad09:/tmp$ cd kao
+lab@906f0d80ad09:/tmp/kao$ wget http://120.114.62.217/TobeExe
+--2021-10-13 03:04:17--  http://120.114.62.217/TobeExe
+Connecting to 120.114.62.217:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7348 (7.2K) [application/octet-stream]
+Saving to: 'TobeExe'
+
+TobeExe             100%[===================>]   7.18K  --.-KB/s    in 0s
+
+2021-10-13 03:04:17 (435 MB/s) - 'TobeExe' saved [7348/7348]
+
+Try 'tar --help' or 'tar --usage' for more information.
+
+-bash: $'\r': command not found
+lab@906f0d80ad09:/tmp/kao$ file TobeExe
+TobeExe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=10558357d3700c05f1426a6d2a09b920bda2e464, not stripped
+lab@906f0d80ad09:/tmp/kao$
+lab@906f0d80ad09:/tmp/kao$ TobeExe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked,
+-bash: syntax error near unexpected token `('
+lab@906f0d80ad09:/tmp/kao$ interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=10558357d3700c05f1426a6d2a09b920bda2e464, not stripped
+-bash: interpreter: command not found
+lab@906f0d80ad09:/tmp/kao$ ls -al TobeExe
+-rw-r--r-- 1 lab lab 7348 Nov 15  2017 TobeExe
+lab@906f0d80ad09:/tmp/kao$
+lab@906f0d80ad09:/tmp/kao$ -rw-r--r-- 1 lab lab 7348 Nov 15  2017 TobeExe
+-bash: -rw-r--r--: command not found
+lab@906f0d80ad09:/tmp/kao$
+lab@906f0d80ad09:/tmp/kao$ chmod +x TobeExe
+lab@906f0d80ad09:/tmp/kao$
+lab@906f0d80ad09:/tmp/kao$
+lab@906f0d80ad09:/tmp/kao$ ls -al TobeExe
+-rwxr-xr-x 1 lab lab 7348 Nov 15  2017 TobeExe
+lab@906f0d80ad09:/tmp/kao$ -rwxr-xr-x 1 lab lab 7348 Nov 15  2017 TobeExe
+-bash: -rwxr-xr-x: command not found
+lab@906f0d80ad09:/tmp/kao$ ./TobeExe
+BreakALLCTF{UvB3IUqxCCiTVxeOuWrL}
+
+10.
+
+lab@906f0d80ad09:/tmp/kao$ wget http://120.114.62.217/reverse
+--2021-10-13 03:11:11--  http://120.114.62.217/reverse
+Connecting to 120.114.62.217:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8808 (8.6K) [application/octet-stream]
+Saving to: 'reverse'
+
+reverse             100%[===================>]   8.60K  --.-KB/s    in 0s
+
+2021-10-13 03:11:11 (55.6 MB/s) - 'reverse' saved [8808/8808]
+
+lab@906f0d80ad09:/tmp/kao$ ls
+ForYou  ForYou.tar.gz  TobeExe  reverse
+
+ForYou  ForYou.tar.gz  TobeExe  reverse
+lab@906f0d80ad09:/tmp/4100E012$
+lab@906f0d80ad09:/tmp/4100E012$
+lab@906f0d80ad09:/tmp/4100E012$ file reverse
+reverse: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=48b2e4555dec00624ea99b45e698155176fd4d09, not stripped
+lab@906f0d80ad09:/tmp/4100E012$ chmod
+chmod: missing operand
+Try 'chmod --help' for more information.
+lab@906f0d80ad09:/tmp/4100E012$ chomd +x reverse
+-bash: chomd: command not found
+lab@906f0d80ad09:/tmp/4100E012$ chmod +x reverse
+lab@906f0d80ad09:/tmp/4100E012$
+lab@906f0d80ad09:/tmp/4100E012$ ./reverse
+Give me your input:oih
+Do you know strings tool?
+lab@906f0d80ad09:/tmp/4100E012$ strings --help
+Usage: strings [option(s)] [file(s)]
+ Display printable strings in [file(s)] (stdin by default)
+ The options are:
+  -a - --all                Scan the entire file, not just the data section [default]
+  -d --data                 Only scan the data sections in the file
+  -f --print-file-name      Print the name of the file before each string
+  -n --bytes=[number]       Locate & print any NUL-terminated sequence of at
+  -<number>                   least [number] characters (default 4).
+  -t --radix={o,d,x}        Print the location of the string in base 8, 10 or 16
+  -w --include-all-whitespace Include all whitespace as valid string characters
+  -o                        An alias for --radix=o
+  -T --target=<BFDNAME>     Specify the binary file format
+  -e --encoding={s,S,b,l,B,L} Select character size and endianness:
+                            s = 7-bit, S = 8-bit, {b,l} = 16-bit, {B,L} = 32-bit
+  -s --output-separator=<string> String used to separate strings in output.
+  @<file>                   Read options from <file>
+  -h --help                 Display this information
+  -v -V --version           Print the program's version number
+strings: supported targets: elf64-x86-64 elf32-i386 elf32-iamcu elf32-x86-64 a.out-i386-linux pei-i386 pei-x86-64 elf64-l1om elf64-k1om elf64-little elf64-big elf32-little elf32-big pe-x86-64 pe-bigobj-x86-64 pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
+Report bugs to <http://www.sourceware.org/bugzilla/>
+lab@906f0d80ad09:/tmp/4100E012$ strings reverse
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+gets
+puts
+printf
+stdout
+setvbuf
+__libc_start_main
+__gmon_start__
+GLIBC_2.2.5
+UH-P
+AWAVA
+AUATL
+[]A\A]A^A_
+Give me your input:
+BreakALLCTF{VLJekKONoWld7ari6HHJ}
+Do you know strings tool?
+;*3$"
+GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.5) 5.4.0 20160609
+crtstuff.c
+__JCR_LIST__
+deregister_tm_clones
+__do_global_dtors_aux
+completed.7585
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+reverse.c
+__FRAME_END__
+__JCR_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+_ITM_deregisterTMCloneTable
+stdout@@GLIBC_2.2.5
+puts@@GLIBC_2.2.5
+_edata
+printf@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+gets@@GLIBC_2.2.5
+__libc_csu_init
+__bss_start
+main
+setvbuf@@GLIBC_2.2.5
+_Jv_RegisterClasses
+__TMC_END__
+_ITM_registerTMCloneTable
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+lab@906f0d80ad09:/tmp/4100E012$ strings reverse  | grep "Break"
+BreakALLCTF{VLJekKONoWld7ari6HHJ}
+
