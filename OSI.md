@@ -1,17 +1,17 @@
 OSI
 
-Application
+**Application**
 7.應用層 Application Layer                         L7 Switch交換器
 6.表達層 Presentation Layer =>.docx,加解密
 5.會議層 Session Layer
 --------------------------------------------------------------------
-Transport
+**Transport**
 4.傳輸層 Transport Layer =>port                    L4 Switch交換器
 --------------------------------------------------------------------
-Internet(Internetworking)                         Router路由器
+**Internet(Internetworking)**                     Router路由器
 3.網路層 Network Layer =>ip                        L3 Switch交換器(ASIC)
 --------------------------------------------------------------------
-Link
+**Link**
 2.資料連結層 Data Link Layer =>MAC                 Switch交換器
 1.實體層 Physical Layer                            Reapeater中繼器
                                                   Hub集線器
