@@ -1,0 +1,10 @@
+IP位置 = 網路ID(Network ID) + 主機ID(Host ID)
+
+分級式定址 Classful Addressing:
+將IPv4的IP位址分成五個級別(A,B,C,D,E)，A至C級的網路ID與主機ID定義以及構造圖如
+
+Class A    網路ID    主機ID    主機ID    主機ID
+
+Class B    網路ID    網路ID    主機ID    主機ID
+
+Class C    網路ID    網路ID    網路ID    主機ID
