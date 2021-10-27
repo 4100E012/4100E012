@@ -1,3 +1,3 @@
 HTTP
 
-*(https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+(https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
